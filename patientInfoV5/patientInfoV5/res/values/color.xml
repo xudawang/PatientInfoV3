@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="WHITE">#ffffff</color>
+    <color name="BLUE">#ff6ddaef</color>
+    <color name="HUISE">#ff8faeb5</color>
+    <color name="BLACK">#000</color>
+    <color name="TOUMING">#00000000</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_dfdfdf">#dfdfdf</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_3d94ea">#3d94ea</color>
+    </resources>

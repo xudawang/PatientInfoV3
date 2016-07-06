@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/ed_select_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/frag_item_cs" />
+
+        <RadioGroup
+            android:id="@+id/rg_cs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:orientation="vertical"
+            android:checkedButton="@+id/rb_Id"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_Id" />
+
+            <RadioButton
+                android:id="@+id/rb_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_name" />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_input"
+        android:background="@drawable/btn_login_style"
+        android:layout_below="@id/ll_select_layout"
+        />
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/lv_contentId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_ok"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

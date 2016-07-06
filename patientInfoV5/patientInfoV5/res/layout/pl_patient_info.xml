@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/include_back_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_img_tx_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:layout_marginTop="?android:attr/actionBarSize"
+        >
+
+        <com.my.imageview.CircleImageView
+            android:id="@+id/img_tx"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_img_tx_layout"
+        android:text="ceshi"
+        android:textColor="@color/BLACK"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    
+
+</RelativeLayout>
